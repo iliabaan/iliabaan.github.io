@@ -8,7 +8,7 @@ Vue.component('complete-page', {
    },
    template: `<div>
    <h2>Информация о созданном клиенте</h2>
-   <div>
+   <div class="info__block">
    <div><h3>Имя:</h3><p>{{clientInfo.secondName.value}} {{clientInfo.firstName.value}} {{clientInfo.middleName.value}}</p></div>
    <div><h3>Дата рождения:</h3><p>{{clientInfo.dateOfBirth.value}}</p></div>
    <div><h3>Номер телефона:</h3><p>{{phone.value}}</p></div>
@@ -157,7 +157,7 @@ Vue.component('personal-info', {
           <button @click="personalData.medicalInfo.clientGroups.selected.length ? nextPage(2) : personalData.medicalInfo.showError = true">Продолжить</button>
        </div>
        <div class="flex__column personal-info__column" v-if="showElements[3].show">
-          <div class="flex__row">
+          <div class="flex__column">
              <div class="flex__column">
                 <input type="text" class="input-min" placeholder="Индекс" 
                 v-model="personalData.address.postcode.value" v-mask="'######'" v-bind:class="{errorInput: personalData.address.postcode.showError}">

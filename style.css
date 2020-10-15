@@ -62,6 +62,7 @@ h2 {
 
 .personal-info__column {
     margin: 0 auto;
+    width: 85%;
 }
 
 .personal-info__column > input {
@@ -91,6 +92,11 @@ h2 {
 
 .errorInput {
     background-color: rgba(255, 110, 57, 0.5);
+}
+
+.info__block {
+    width: 85%;
+    margin: 0 auto;
 }
 
 .client__info {
