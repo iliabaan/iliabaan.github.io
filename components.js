@@ -84,7 +84,7 @@ Vue.component('personal-info', {
                if (this.personalData.clientInfo[key].showError == false) {
                   i++;
                }
-               if (i == 5) {
+               if (i == Object.keys(this.personalData.clientInfo).length) {
                   this.nextPage(0);
                };
             };
